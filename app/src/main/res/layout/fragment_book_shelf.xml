@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bookshelf_frag"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient"
+    android:padding="15dp"
+    android:scrollbars="none"
+    android:layout_marginBottom="50dp"
+    tools:context=".fragments.BookShelfFragments">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            style="@style/TextViewStyling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Books" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+
+            <RelativeLayout
+                android:id="@+id/to_discover_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/my_books_recycle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal"
+                    android:layout_marginEnd="10dp"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="21dp"
+                    android:layout_width="120dp"
+                    android:layout_height="210dp"
+                    android:layout_toEndOf="@id/my_books_recycle"
+                    android:background="@drawable/dotted_when_select">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/to_bookstore_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/adding_btn"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discover More"
+                        android:layout_below="@id/to_bookstore_img"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            style="@style/TextViewStyling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            android:text="WishListed Books " />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wish_listed_books"
+            android:layout_width="match_parent"
+            android:layout_height="700dp" />
+    </LinearLayout>
+
+
+</ScrollView>

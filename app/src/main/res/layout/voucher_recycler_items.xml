@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:weightSum="100">
+    <TextView
+        android:id="@+id/name_voucher_tv"
+        android:gravity="center_horizontal"
+        android:text="A Shae A Yat Kha Nay Wun Htwet Thi pa mar"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp"/>
+    <TextView
+        android:id="@+id/price_voucher_tv"
+        android:gravity="start"
+        android:paddingStart="10dp"
+        android:text="10000"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"/>
+</LinearLayout>

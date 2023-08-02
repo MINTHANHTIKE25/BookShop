@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarThumbVertical="@color/white"
+    android:layout_gravity="center"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="left"
+    android:background="@color/black">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/books_img_dlg_mtv"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@color/light_blue"/>
+        <TextView
+            android:id="@+id/books_review_dlg_mtv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/testing"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/authors_dlg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Authors :"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/authors_tv_dlg_mtv"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@id/authors_dlg"/>
+            <TextView
+                android:id="@+id/price_dlg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price :"
+                android:layout_below="@id/authors_tv_dlg_mtv"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/price_tv_dlg_mtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/price_dlg"
+                android:layout_below="@id/authors_tv_dlg_mtv"
+                android:textColor="@color/white"
+                android:layout_marginBottom="20sp"
+                android:textSize="20sp"/>
+            <Button
+                android:layout_below="@id/price_tv_dlg_mtv"
+                android:id="@+id/to_bag_dlg_mtv"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/light_blue"
+                android:text=" Add to bag "
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"/>
+            <Button
+                android:layout_below="@id/price_tv_dlg_mtv"
+                android:layout_toEndOf="@id/to_bag_dlg_mtv"
+                android:id="@+id/to_wish_dlg_mtv"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/light_blue"
+                android:text="Add to wishlist"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

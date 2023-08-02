@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BagFragments">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bag_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_above="@id/result_rel"
+        android:layout_alignParentTop="true"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/result_rel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="68dp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="18dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#131313">
+            <ImageView
+                android:id="@+id/mmk_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/money"
+                />
+            <TextView
+                android:id="@+id/fianl_money_tv"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/mmk_bag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextViewStyling"
+                android:text="10000"/>
+            <Button
+                android:id="@+id/final_bag_btn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#001835"
+                android:text="@string/confrim"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

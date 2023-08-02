@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="20dp"
+    android:padding="0dp"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#19191E">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/image_cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@color/white" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/books_name_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/minus_button"
+            android:layout_toEndOf="@id/image_cardView"
+            android:text="Htet Mya Thaw Dar Thor Paw Kha Choe Mya Thaw Pya Yae Zat"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginBottom="3dp"/>
+
+        <TextView
+            android:id="@+id/authors_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/books_name_bag"
+            android:layout_toLeftOf="@id/minus_button"
+            android:layout_toEndOf="@id/image_cardView"
+            android:text="Mya Than Tint"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/mmk_sign_bag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authors_bag"
+            android:layout_toEndOf="@id/image_cardView"
+            android:text="MMK :"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginEnd="2dp"/>
+
+        <TextView
+            android:id="@+id/books_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authors_bag"
+            android:layout_toLeftOf="@id/minus_button"
+            android:layout_toEndOf="@id/mmk_sign_bag"
+            android:textColor="@color/white"
+            android:layout_marginEnd="5dp"
+            android:textSize="12sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/minus_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/minus"
+            app:borderWidth="0dp"
+            app:fabCustomSize="20dp"
+            android:layout_above="@id/bag_items_amount"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/bag_items_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="28dp"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/plus_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/bag_items_amount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/adding_btn"
+            app:borderWidth="0dp"
+            app:fabCustomSize="20dp"
+            android:contentDescription="TODO" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

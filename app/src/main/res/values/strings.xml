@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BookShop</string>
+    <string name="welcome_from_login">Welcome From Our BookStore</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="enter_your_email">Enter Your Email :</string>
+    <string name="enter_your_password">Enter your Password :</string>
+    <string name="login">LogIn</string>
+    <string name="confrim">Confrim</string>
+    <string name="register_here">Register Here</string>
+    <string name="welcome_from_register">Welcome From Register</string>
+    <string name="address">Address :</string>
+    <string name="enter_your_address">Enter your address :</string>
+    <string name="enter_your_age">Enter your age :</string>
+    <string name="age">Age :</string>
+    <string name="phno">Phno :</string>
+    <string name="enter_your_phno">Enter your phno :</string>
+    <string name="enter_your_nrc">Enter your nrc :</string>
+    <string name="nrc">Nrc :</string>
+    <string name="enter_your_name">Enter your name :</string>
+    <string name="name">Name :</string>
+    <!-- The name of the books category-->
+    <string name="poems">poems</string>
+    <string name="novels">novels</string>
+    <string name="science">science</string>
+    <string name="motivation">motivation</string>
+    <string name="politics">politics</string>
+    <string name="testing" tools:ignore="StringEscaping">
+        We have Android guides for everyone whether you are a beginner, intermediate or expert. Want to learn how to use the ActionBar or the ins and outs of fragments? We got that. Want to learn about automated unit testing or how to build flexible user interfaces for multiple devices? We got you covered. We don\'t waste time with the "theoretical approach" you might get from a book. We cover exactly the things we use every day as we are developing apps for contracts.
+
+Need Help? Please join this gitter real-time chat or the google groups for these guides where you can post related questions. You can also get 1:1 mentorship online through codementor.
+Ever been frustrated finding information on outdated one-off blog posts and tutorials that have long since become irrelevant? How many times have you been googling to find your answer only exists on an obscure 2 year old StackOverflow post? We believe there\'s got to be a better way. Why not have the community work together to create useful and detailed documentation for every aspect of Android (or any platform)? There\'s absolutely no reason that we should have to make do with vague and outdated content anymore.
+Read about our mission to change the way engineers learn new technologies and check out how you can get involved! In addition, we are at present a fledgling startup so if you like this guide and what we are trying to do, please consider following us on twitter @codepath!
+The cliffnotes below are categorized by their topic, so you can easily find guides on related topics whether that is views, styling, testing, or using sensors. If you see an error, incorrect explanation or deprecated solution, why not contribute back and make these cliffnotes better for the next person? That in a nutshell is the core spirit of this initiative. Check out the list of contributors to this project.
+    </string>
+    <string name="enter_your_confirm_passwords">Enter your confirm passwords :</string>
+    <string name="kbz_pay">KBZ PAY</string>
+    <string name="wave_pay">WAVE PAY</string>
+    <string name="cb_pay">CB PAY</string>
+    <string name="aya_pay">AYA PAY</string>
+    <string name="logo">LOGO</string>
+    <string name="tobag">TOBAG</string>
+    <string name="toback">TOBACK</string>
+    <string name="toaccount">TOACCOUNT</string>
+    <string name="todo">TODO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

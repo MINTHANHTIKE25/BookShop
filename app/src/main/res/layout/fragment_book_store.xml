@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".fragments.BookStoreFragment">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout_bookstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scrollIndicators="bottom"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/teal_700"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/teal_700"
+            app:tabTextAppearance="@style/TabText"
+            app:tabTextColor="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/novels" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/poems" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/science" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motivation" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/politics" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="7dp">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/image_slider_bookstore"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                app:sliderAnimationDuration="1300"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorEnabled="false"
+                app:sliderScrollTimeInSec="2" />
+        </androidx.cardview.widget.CardView>
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/slider_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            app:sliderIndicatorAnimationDuration="1300"
+            app:sliderIndicatorEnabled="true"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="0dp"
+            app:sliderIndicatorPadding="4dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="@color/teal_700"
+            app:sliderIndicatorUnselectedColor="@color/grey"
+            app:sliderScrollTimeInSec="2" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager_bookstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:saveEnabled="false"
+            android:layout_marginBottom="20dp"/>
+</LinearLayout>

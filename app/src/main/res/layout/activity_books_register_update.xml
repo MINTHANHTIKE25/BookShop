@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".signup.BooksRegisterUpdateActivity">
+
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Registeration Of Books"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="15dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/books_name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter the book name :"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="15dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/books_id_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter the books id :"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="15dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/books_price_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter the book price :"
+                android:inputType="numberSigned"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12sp"
+            android:layout_marginEnd="15dp"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="1dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/books_author_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Enter the book author :"
+                android:inputType="text"
+                android:textColor="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RadioGroup
+            android:id="@+id/books_rdo_gp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <RadioButton
+                android:id="@+id/poems_rdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/btn_radio"
+                android:button="@null"
+                android:text="@string/poems"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:textSize="16sp"
+                android:layout_marginEnd="10dp"/>
+            <RadioButton
+                android:id="@+id/novels_rdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/novels"
+                android:textColor="@color/black"
+                android:drawableTop="@android:drawable/btn_radio"
+                android:button="@null"
+                android:textStyle="normal"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/science_rdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/science"
+                android:drawableTop="@android:drawable/btn_radio"
+                android:button="@null"
+                android:textStyle="normal"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/motivation_rdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/motivation"
+                android:drawableTop="@android:drawable/btn_radio"
+                android:button="@null"
+                android:textStyle="normal"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:id="@+id/politics_rdo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/politics"
+                android:drawableTop="@android:drawable/btn_radio"
+                android:button="@null"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_marginEnd="8dp"
+                android:textSize="16sp"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/confirm_register_books"
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="10sp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/confrim" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
